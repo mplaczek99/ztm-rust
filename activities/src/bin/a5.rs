@@ -9,6 +9,18 @@
 // * Print the variable within the loop statement
 // * Use break to exit the loop
 
-fn main() {}
+fn main() {
+    // * Use a mutable integer variable
+    let mut num = 1;
+    // * Use a loop statement
+    loop {
+        // * Print the variable within the loop statement
+        println!("{:?}", num);
 
-
+        // * Use break to exit the loop
+        if num == 4 {
+            break;
+        }
+        num = num + 1;
+    }
+}
