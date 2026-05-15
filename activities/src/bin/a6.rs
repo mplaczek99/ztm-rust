@@ -10,6 +10,16 @@
 // * Print the variable within the while loop
 // * Do not use break to exit the loop
 
-fn main() {}
+fn main() {
+    // * Use a mutable integer variable
+    let mut loop_counter = 5;
+    // * Use a while statement
+    while loop_counter >= 1 {
+        // * Print the variable within the while loop
+        println!("{:?}", loop_counter);
 
-
+        // * Do not use break to exit the loop
+        loop_counter = loop_counter - 1;
+    }
+    println!("done!");
+}
